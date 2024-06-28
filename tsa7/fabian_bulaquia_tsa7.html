@@ -10,7 +10,7 @@
     <div class="container">
         <div class="controls">
             <button onclick="resetFlexbox()">Reset Flexbox</button>
-            <input type="number" id="gap">
+            <input type="number" id="gap" min="0">
             <button onclick="updateGap('gap')">Gap</button>
             
             <div>
@@ -43,17 +43,17 @@
                 <br>
                 <br>
                 <div>
-                    <input type="number" id="grow1" onchange="setFlexGrow(0, this.value)">
+                    <input type="number" id="grow1" min="0" onchange="setFlexGrow(0, this.value)">
                     <button onclick="setFlexGrow(0, document.getElementById('grow1').value)">Grow B-1</button>
                 </div>
                 <br>
                 <div>
-                    <input type="number" id="grow2" onchange="setFlexGrow(1, this.value)">
+                    <input type="number" id="grow2" min="0" onchange="setFlexGrow(1, this.value)">
                     <button onclick="setFlexGrow(1, document.getElementById('grow2').value)">Grow B-2</button>
                 </div>
                 <br>
                 <div>
-                    <input type="number" id="grow3" onchange="setFlexGrow(2, this.value)">
+                    <input type="number" id="grow3" min="0" onchange="setFlexGrow(2, this.value)">
                     <button onclick="setFlexGrow(2, document.getElementById('grow3').value)">Grow B-3</button>
                 </div>
             </div>
