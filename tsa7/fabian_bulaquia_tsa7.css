@@ -1,0 +1,67 @@
+body {
+    font-family: cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: pink;
+}
+ 
+.container {
+    display: flex;
+    gap: 20px;
+}
+ 
+.controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+ 
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    border: 2px solid black;
+    width: 300px;
+    height: 700px;
+}
+
+.grow1, .grow2, .grow3{
+    width: 10px;
+}
+ 
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+}
+
+.box:nth-child(2) {
+    background-color: red;
+}
+ 
+.box:nth-child(3) {
+    background-color: green;
+}
+ 
+button, input {
+    padding: 10px 30px;
+    font-size: 16px;
+    font-family: cursive;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: lightcoral;
+}
+

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Simulator TSA7</title>
+    <link rel="stylesheet" href="fabian_bulaquia_tsa7.css">
+</head>
+<body>
+    <div class="container">
+        <div class="controls">
+            <button onclick="resetFlexbox()">Reset Flexbox</button>
+            <input type="number" id="gap">
+            <button onclick="updateGap('gap')">Gap</button>
+            
+            <div>
+                <p>Flex Direction</p>
+                <button onclick="setFlexDirection('row')">Row</button>
+                <button onclick="setFlexDirection('column')">Column</button>
+            </div>
+            
+            <div>
+                <p>Justify Content</p>
+                <button onclick="setJustifyContent('flex-start')">Start</button>
+                <button onclick="setJustifyContent('center')">Center</button>
+                <button onclick="setJustifyContent('flex-end')">End</button>
+                <button onclick="setJustifyContent('space-between')">Space Between</button>
+                <button onclick="setJustifyContent('space-around')">Space Around</button>
+                <button onclick="setJustifyContent('space-evenly')">Space Evenly</button>
+            </div>
+            
+            <div>
+                <p>Align Items</p>
+                <button onclick="setAlignItems('flex-start')">Start</button>
+                <button onclick="setAlignItems('center')">Center</button>
+                <button onclick="setAlignItems('flex-end')">End</button>
+            </div>
+ 
+            <div>
+                <p>Flex Grow</p>
+                <button onclick="resetFlexGrow()">Reset</button>
+                <button onclick="setFlexGrowAll()">Grow All</button>
+                <br>
+                <br>
+                <div>
+                    <input type="number" id="grow1" onchange="setFlexGrow(0, this.value)">
+                    <button onclick="setFlexGrow(0, document.getElementById('grow1').value)">Grow B-1</button>
+                </div>
+                <br>
+                <div>
+                    <input type="number" id="grow2" onchange="setFlexGrow(1, this.value)">
+                    <button onclick="setFlexGrow(1, document.getElementById('grow2').value)">Grow B-2</button>
+                </div>
+                <br>
+                <div>
+                    <input type="number" id="grow3" onchange="setFlexGrow(2, this.value)">
+                    <button onclick="setFlexGrow(2, document.getElementById('grow3').value)">Grow B-3</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="flexbox" id="flexbox">
+            <div class="box" id="box1">1</div>
+            <div class="box" id="box2">2</div>
+            <div class="box" id="box3">3</div>
+        </div>
+    </div>
+    <script src="fabian_bulaquia_tsa7.js"></script>
+</body>
+</html>
