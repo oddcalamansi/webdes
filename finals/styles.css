@@ -1,0 +1,539 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+.navi {
+    font-family: "Aclonica", sans-serif;
+    background-color: #0F0F0F;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    z-index: 1;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+    align-items: left;
+    justify-content: space-evenly;
+    gap: 25px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.navi .container {
+    color: black;
+    padding: 13px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    width: 95vw;
+    margin: 0 auto;
+}
+
+li {
+    list-style: none;
+}
+
+li>a {
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+    transition: 0.4s all ease;
+}
+
+li>a:hover {
+    color: #333;
+}
+
+.home {
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.homepage h1 {
+    font-size: 5em; 
+    font-family: "Poetsen One", sans-serif;
+    position: relative;
+    bottom: 120px;
+    animation: flickerAnimation 4s ease infinite alternate; 
+}
+
+.homepage h2{
+    font-size: 3em;    
+    font-family: "Poetsen One", sans-serif;
+    position: relative;
+    bottom: 60px;
+}
+
+.button {
+    background-color: #0071E3;
+    border-radius: 20px;
+    padding: 10px; 
+    cursor: pointer;
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    margin: auto;
+    width: 10%;
+    padding: 10px;
+}
+
+.button:hover{
+    background-color: #004e9c;
+    transition: 0.4s all ease;
+}
+
+.twobytwopic{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    position: relative;
+    bottom: -100px;
+    animation: floatAnimation 1.5s ease infinite alternate; 
+}
+
+.about{
+    background-color: #DCDCDE;
+}
+
+.about h3 {
+    font-size: 63px;
+    font-family: "Aclonica", sans-serif;
+    position: relative;
+    bottom: -180px;
+    margin-left: 400px;
+}
+
+.about p {
+    max-width: 500px;
+    text-align: left;
+    line-height: 2.0;
+    font-family: "Aclonica", sans-serif;
+    position: relative;
+    bottom: -240px;
+    margin-left: 400px;
+    font-size: 1.2rem;
+}
+
+.aboutme img {
+    width: 550px;
+    height: 500px;
+    border-radius: 60%;
+    margin-left: 1200px;
+    position: relative;
+    bottom: 200px;
+}
+
+.portfolio {
+    padding: 20px;
+    background-color: black;
+}
+
+.portfolio p {
+    font-family: "Aclonica", sans-serif;
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 20px;
+    margin: auto;
+    width: 13%;
+    padding: 10px;
+}
+
+.works {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1700px;
+    margin: 10px;
+    margin: auto;
+    padding: 10px;
+}
+
+.tsalinks {
+    width: 520px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.tsalinks img {
+    width: 100%;
+    height: 270px; 
+    overflow: hidden;
+}
+
+.tsalinks a {
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    color: white;
+    font-family: "Aclonica", sans-serif
+}
+
+.tsalinks img:hover {
+    transform: scale(1.25);
+    cursor: pointer;
+    transition: 1s ease;
+}
+
+.testimonials {
+    padding: 4rem 8rem;
+    color: black;
+    text-align: center; 
+    background-color: #DCDCDE;
+}
+
+.testimonials h2 {
+    font-size: 3rem;
+    margin-bottom: 5rem;
+    margin-top: 1rem;
+    font-family: "Aclonica", sans-serif
+}
+
+.testimonials p {
+    margin-bottom: 2rem;
+    font-size: larger;
+    text-align: center; 
+    font-family: cursive;
+}
+
+.testimonyals {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 3rem;
+}
+
+.people {
+    position: relative;
+    background-color: #b8b8b8;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 3px solid black;
+}
+
+.people img {
+    width: 35%;
+    border-radius: 10px;
+    height: 160px; 
+    object-fit: cover; 
+    margin: auto;
+    padding: 10px;
+}
+
+.sabinila {
+    padding: 1rem 0;
+}
+
+.sabinila h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-family: "Aclonica", sans-serif;
+}
+
+.sabinila p {
+    font-size: 1rem;
+}
+
+.wrapper .icon{
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 50%;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 22px;
+    display: inline-block;
+    align-items: center;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    color: #333;
+    text-decoration: none;
+}
+  .wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    line-height: 1.5;
+    font-size: 14px;
+    background-color: #ffffff;
+    color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+  .wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background-color: #ffffff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+  .wrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+  .wrapper .icon:hover span,
+  .wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+  .wrapper .facebook:hover,
+  .wrapper .facebook:hover .tooltip,
+  .wrapper .facebook:hover .tooltip::before {
+    background-color: #3b5999;
+    color: #ffffff;
+}
+  .wrapper .instagram:hover,
+  .wrapper .instagram:hover .tooltip,
+  .wrapper .instagram:hover .tooltip::before {
+    background-color: #e1306c;
+    color: #ffffff;
+}
+  .wrapper .github:hover,
+  .wrapper .github:hover .tooltip,
+  .wrapper .github:hover .tooltip::before {
+    background-color: #333333;
+    color: #ffffff;
+}
+  .wrapper .youtube:hover,
+  .wrapper .youtube:hover .tooltip,
+  .wrapper .youtube:hover .tooltip::before {
+    background-color: #de463b;
+    color: #ffffff;
+}
+
+.socmedlinks{
+    background-color: white;
+}
+
+.contact {
+    padding: 140px 0 10px; 
+    background-color:#DCDCDE;
+    color: black;
+}
+
+.contact h3 {
+    font-size: 30px;
+    margin-bottom: 45px; 
+    text-align: center;
+    font-family: "Aclonica", sans-serif;
+}
+
+.contact h2, p{
+    font-size: 22px;
+    margin-bottom: 45px; 
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contact p{
+    font-size: 16px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contact .container {
+    margin-top: 60px;
+    max-width: 800px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact form .FORM {
+    display: flex;
+}
+
+.contact form input{
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    margin: auto;
+    width: 50%;
+}
+
+.contact form textarea{
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    margin: auto;
+    width: 70%;
+    height: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact form button {
+    font-family: Arial, Helvetica, sans-serif;
+    align-self: center; 
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
+.contact form button:hover {
+    background-color:#949494;
+}
+
+footer {
+    background: #0F0F0F;
+    padding: 25px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 17px;
+    color: white;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes floatAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-35px);
+    }
+}
+
+@keyframes flickerAnimation { 
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+}
+  .animate-flicker {
+      opacity:1;  
+      animation: flickerAnimation 4s infinite;
+}
+
+@media(max-width:1366px){
+    .aboutme img {
+    width: 550px;
+    height: 500px;
+    margin-left: 750px;
+    }
+
+    .about h3{
+        font-size: 48px;
+        margin-left: 180px;
+    }
+    
+    .about p{
+        margin-left: 120px;
+        font-size: 1.05rem;
+    }
+
+    .works{
+            width: 90%;
+            margin: 10px auto;
+    }
+
+    .people img{
+    width: 55%;
+    }
+}
+
+@media(max-width:1024px){
+    .aboutme img {
+        width: 400px;
+        height: 370px;
+        margin-left: 570px;
+        margin-top: 80px;
+    }
+    
+        .about h3{
+            font-size: 42px;
+            margin-left: 100px;
+    }
+        
+        .about p{
+            margin-left: 40px;
+            font-size: 1rem;
+    }
+    
+        .works{
+          width: 50%;
+        margin: auto auto;
+        flex-direction: column;
+    }
+    
+        .people img{
+        width: 85%;
+    }
+}
+
+@media(max-width:768px){    
+    .aboutme img {
+        width: 300px;
+        height: 270px;
+        margin-left: 400px;
+        margin-top: 85px;
+    }
+    
+        .about h3{
+            font-size: 36px;
+            margin-left: 70px;
+        }
+        
+        .about p{
+            margin-left: 40px;
+            font-size: 0.9rem;
+            max-width: 300px;
+        }
+
+        .works{
+          width: 80%;   
+        flex-direction: column;
+        }
+
+    .portfolio p{
+        width: 100%; 
+    }
+    
+    .people img{
+        width: 150%;
+        margin-left: -23px;
+    }
+}
